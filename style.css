@@ -1,0 +1,100 @@
+
+:root{
+    --red:#ff3838;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "fantasy", sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection{
+    background: var(--red);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background: #f7f7f7;
+}
+section{
+    background:#f7f7f7 ;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgb(0, 0,0,.1);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #666;
+}
+
+header .logo i {
+    padding-right: .5rem;
+    color: var(--red);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(var(--red));
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: url(./) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    flex:1 1 40rem;
+    padding-top:6.5rem ;
+}
+
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+
+    padding: 1rem;
+    width: 100%;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+.home .content{
+
+}
